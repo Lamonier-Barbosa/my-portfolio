@@ -1,0 +1,8 @@
+/* css reset and strings to reuse  */
+@import "./global.css";
+
+/* Header */
+@import "./header.css";
+
+/* Home Page */
+@import "/css/home-page.css";
