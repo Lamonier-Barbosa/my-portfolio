@@ -1,0 +1,25 @@
+.img-port {
+    width: 360px;
+    height: 660px;
+    background-size: cover;
+    background-position: 100% 0%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 5s;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.site1 {
+    background-image: url("../assets/img-project/barbearia-corte-nobre.png");
+}
+
+.site2 {
+    background-image: url("../assets/img-project/bikcraft.png");
+}
+
+.site3 {
+    background-image: url();
+}
