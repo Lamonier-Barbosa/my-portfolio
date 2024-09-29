@@ -60,6 +60,21 @@ span {
         0 0 100px var(--main-color);
 }
 
+.home .home-img img {
+    position: relative;
+    animation: float 2s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
 .home-content p {
     font-size: 1.5rem;
     font-weight: 500;

@@ -6,3 +6,9 @@
 
 /* Home Page */
 @import "/css/home-page.css";
+
+/* Timeline */
+@import "./timeline.css";
+
+/* Services */
+@import "./services.css";
