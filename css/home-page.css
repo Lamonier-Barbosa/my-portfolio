@@ -1,6 +1,7 @@
 section {
     min-height: 100vh;
     padding: 10rem 12% 10rem;
+    box-shadow: 0 0 40px 5px #00ffee;
 }
 
 .home {

@@ -47,4 +47,6 @@
     line-height: 2;
 }
 
-.service-info p {}
+.service-info p {
+    font-size: 2rem;
+}
