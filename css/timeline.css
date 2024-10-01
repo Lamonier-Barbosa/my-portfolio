@@ -132,3 +132,10 @@
         left: 0;
     }
 }
+
+
+@media(max-width: 500px) {
+    .education h2 {
+        font-size: 6rem;
+    }
+}

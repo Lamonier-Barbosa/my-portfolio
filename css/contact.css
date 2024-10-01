@@ -39,10 +39,40 @@
     margin-top: 2rem;
 }
 
+.btn-contact {
+    border-radius: 20px;
+    width: 200px;
+    height: 65px;
+}
+
+.loading {
+    width: 40px;
+    animation: spin 1s infinite linear;
+}
+
+
+@keyframes spin {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
 /*  RESPONSIVIDADE */
 
 @media(max-width: 991px) {
     .contact form {
         flex-direction: column;
+    }
+}
+
+@media(max-width: 500px) {
+    .contact h2 {
+        font-size: 6rem;
     }
 }

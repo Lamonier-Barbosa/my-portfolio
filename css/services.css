@@ -76,3 +76,26 @@
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+@media(max-width: 525px) {
+
+    .service-box .service-info {
+        padding: 2rem 2rem;
+        max-height: 500px;
+    }
+
+    .service-info p {
+        font-size: 1.8rem;
+    }
+
+    .services h2 {
+        font-size: 6rem;
+    }
+}
+
+@media(max-width: 380px) {
+    .service-box .service-info {
+        padding: 1rem 1rem;
+        max-height: 500px;
+    }
+}

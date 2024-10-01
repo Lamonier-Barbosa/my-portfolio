@@ -5,7 +5,7 @@
 @import "./header.css";
 
 /* Home Page */
-@import "/css/home-page.css";
+@import "./homePage.css";
 
 /* Timeline */
 @import "./timeline.css";

@@ -56,23 +56,28 @@
 .overlay:hover {
     opacity: 1;
     box-shadow: 0 0 30px 5px #00ffee;
+    transform: scale(1.02);
 }
 
+/* 
 .overlay h2 {
     display: flex;
     height: 300px;
     justify-content: center;
     align-items: center;
-}
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #ffffff96;
+} */
 
 .btn-portfolio-content {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    height: 150px;
+    align-items: end;
+    height: 450px;
 }
 
-/* botao */
+/* BUTTON */
 
 .btn-portfolio {
     text-align: center;
@@ -106,4 +111,36 @@
     transition: all ease .5s;
     opacity: 1;
     left: 8px;
+}
+
+/* PROJECT DESCRIPTION */
+
+.project-description {
+    width: 360px;
+    font-size: 1.5rem;
+}
+
+.project-description h2 {
+    padding: 1.5rem;
+    color: #00ffee;
+    text-align: center;
+}
+
+.project-description p strong {
+    color: #00ffee;
+    padding: 1rem;
+}
+
+
+
+/* RESPONSIVENESS */
+
+@media(max-width: 500px) {
+    .portfolio h2 {
+        font-size: 6rem;
+    }
+
+    .project-description h2 {
+        font-size: 2.5rem;
+    }
 }

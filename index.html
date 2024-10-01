@@ -16,21 +16,21 @@
         <i class='bx bx-menu' id="menu-icon"></i>
 
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#education">Education</a>
-            <a href="#services">Services</a>
+            <a href="#home">Home</a>
+            <a href="#education">Formação</a>
+            <a href="#services">Serviços</a>
             <a href="#portfolio">Portfólio</a>
-            <a href="#contact">Contact</a>
+            <a href="#contact">Contato</a>
         </nav>
     </header>
 
     <section class="home" id="home">
         <div class="home-content">
-            <h1>Hi, It's <span>Lamonier</span></h1>
-            <h3 class="text-animation">I'm a <span></span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam enim dolorem tenetur similique velit
-                sapiente fugiat dignissimos explicabo, commodi eos repudiandae quam voluptatibus laboriosam quibusdam ad
-                iusto numquam aliquid? Non.</p>
+            <h1>Olá, me chamo <span>Lamonier</span></h1>
+            <h3 class="text-animation">eu sou <span></span></h3>
+            <p>Desenvolvedor Front-end dedicado e apaixonado por tecnologia, estudo programação a 1 ano e 6
+                meses, comecei estudando Back-end com JavaScript, Node.Js, SQL, NPM e Json. Após 10 meses de
+                estudos intensivos e projetos feitos em equipe, passei a estudar o Front-end</p>
 
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/lamonier-barbosa/" target="_blank"><i
@@ -39,7 +39,7 @@
             </div>
 
             <div class="btn-group">
-                <a href="#" class="btn">Hire</a>
+                <a href="./assets/pdf/Curriculo-Lamonier.pdf" class="btn curriculo" download>Currículo</a>
                 <a href="#contact" class="btn">Contact</a>
 
             </div>
@@ -150,31 +150,58 @@
         <div class="interface">
             <h2 class="heading">Portfólio<span>.</span></h2>
             <div class="flex">
-                <div class="img-port site1">
-                    <div class="overlay">
+                <div>
+                    <div class="img-port site1">
+                        <div class="overlay">
+                            <div class="btn-portfolio-content">
+                                <a href="https://barbearia-corte-nobre.vercel.app/" class="btn-portfolio"
+                                    target="_blank">Projeto</a>
+                                <a href="https://github.com/Lamonier-Barbosa/Barbearia-corte-nobre"
+                                    class="btn-portfolio" target="_blank">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-description">
                         <h2>Corte Nobre</h2>
-                        <div class="btn-portfolio-content">
-                            <a href="#" class="btn-portfolio">Projeto</a>
-                            <a href="#" class="btn-portfolio">Github</a>
-                        </div>
+                        <p>Projeto Corte Nobre, é um projeto Front-End de uma Barbearia totalmente responsivo, feito com
+                            <strong>Html, Css, JavaScript, Git e Github</strong>
+                        </p>
                     </div>
                 </div>
-                <div class="img-port site2">
-                    <div class="overlay">
+                <div>
+                    <div class="img-port site2">
+                        <div class="overlay">
+                            <div class="btn-portfolio-content">
+                                <a href="https://lamonier-barbosa.github.io/Bikcraft/" class="btn-portfolio"
+                                    target="_blank">Projeto</a>
+                                <a href="https://github.com/Lamonier-Barbosa/Bikcraft" class="btn-portfolio"
+                                    target="_blank">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-description">
                         <h2>Bikcraft</h2>
-                        <div class="btn-portfolio-content">
-                            <a href="#" class="btn-portfolio">Projeto</a>
-                            <a href="#" class="btn-portfolio">Github</a>
-                        </div>
+                        <p>Bikcraft é um projeto fictício de venda de bicicletas personalizadas.
+                            as tecnologias Utilizadas foram<strong> HTML, CSS, JavaScript, Git, Github e Figma</strong>
+                        </p>
                     </div>
                 </div>
-                <div class="img-port site3">
-                    <div class="overlay">
-                        <h2>Projeto3</h2>
-                        <div class="btn-portfolio-content">
-                            <a href="#" class="btn-portfolio">Projeto</a>
-                            <a href="#" class="btn-portfolio">Github</a>
+                <div>
+                    <div class="img-port site3">
+                        <div class="overlay">
+                            <div class="btn-portfolio-content">
+                                <a href="https://lamonier-barbosa.github.io/animais-fantasticos/" class="btn-portfolio"
+                                    target="_blank">Projeto</a>
+                                <a href="https://github.com/Lamonier-Barbosa/animais-fantasticos" class="btn-portfolio"
+                                    target="_blank">Github</a>
+                            </div>
                         </div>
+                    </div>
+                    <div class="project-description">
+                        <h2>Animais Fantastico</h2>
+                        <p>O projeto Animais Fantastico, foi feito para o estudo acadêmico de JavaScript,
+                            as tecnologias Utilizadas foram <strong>HTML, CSS, JavaScript, Git, Github e Figma</strong>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -182,23 +209,26 @@
     </section>
 
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
+        <h2 class="heading">contato<span>.</span></h2>
 
-        <form action="">
-            <div class="input-group">
+        <form action="" method="post">
+            <div class=" input-group">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
+                    <input name="Nome" type="text" placeholder="Nome completo">
+                    <input name="Email" type="email" placeholder="E-mail">
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Phone Number">
-                    <input type="text" placeholder="Subject">
+                    <input name="WhatsApp" type="number" placeholder="WhatsApp">
+                    <input name="Sobre" type="text" placeholder="Sobre">
                 </div>
             </div>
 
             <div class="input-goup-2">
-                <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn">
+                <textarea name="Mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+                <button id="btn-form" type="submit" value="" class="btn btn-contact">
+                    Enviar
+                    <!-- <img src="./assets/svg/loading.png" alt="SVG de loading" class="loading"> -->
+                </button>
             </div>
         </form>
     </section>
@@ -220,7 +250,6 @@
             © Lamonier Barbosa | Todos os Direitos Reservados.
         </p>
     </footer>
-
 
     <script src="./js/script.js"></script>
 </body>
