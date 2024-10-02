@@ -125,7 +125,7 @@ span {
 }
 
 .btn.curriculo::after {
-    content: "🠋";
+    content: "⬇";
     font-size: 1.8rem;
     padding-left: 5px;
     color: #000000;
