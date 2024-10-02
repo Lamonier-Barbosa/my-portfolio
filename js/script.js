@@ -1,37 +1,29 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
+let navlinks = document.querySelectorAll('.nav_link');
 
-
-window.onscroll = () => {
+let currentSection = 'home';
+window.addEventListener('scroll', () => {
     sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-
-        if (top >= offset && top < offset + height) {
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a [href*=' + id + ' ]').classList.add('active');
-            })
+        if (window.scrollY >= sec.offsetTop - 200) {
+            currentSection = sec.id;
+        }
+    });
+    navlinks.forEach(navLink => {
+        if (navLink.href.includes(currentSection)) {
+            document.querySelector('.active').classList.remove('active');
+            navLink.classList.add('active');
+            menuIcon.onclick = () => {
+                menuIcon.classList.toggle('bx-x');
+                navbar.classList.toggle('ativar')
+            }
         }
     })
-}
-
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-};
+})
 
 // CONTATO
 const button = document.getElementById('btn-form');
-
-const enviar = () => {
-    button.innerHTML = 'Enviar'
-}
-
 const addLoading = () => {
     button.style.background = 'black';
     button.style.border = '2px solid var(--main - color)';
@@ -39,6 +31,7 @@ const addLoading = () => {
 };
 
 const removeLoading = () => {
+    document.querySelector('form').reset();
     button.style.background = 'var(--main-color)';
     button.style.border = '2px solid transparent';
     button.innerHTML = '<img src="./assets/svg/check.svg" alt="SVG de loading" class="loading" id = "loading" style = "animation: none" > ';
@@ -67,4 +60,4 @@ const handleSubmit = (event) => {
     });
 }
 
-document.querySelector('form').addEventListener('submit', handleSubmit)
+document.querySelector('form').addEventListener('submit', handleSubmit);

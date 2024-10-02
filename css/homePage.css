@@ -187,7 +187,7 @@ span {
 
     0%,
     20% {
-        content: "Front-End Developer";
+        content: "Desenvolvedor Front-End";
     }
 
     21%,
@@ -202,12 +202,12 @@ span {
 
     61%,
     80% {
-        content: "Web Developer";
+        content: "Desenvolvedor Back-End";
     }
 
     81%,
     100% {
-        content: "Software Tester";
+        content: "Desenvolvedor Web";
     }
 }
 
@@ -263,7 +263,7 @@ span {
         display: none;
     }
 
-    .navbar.active {
+    .navbar.ativar {
         display: block;
     }
 
@@ -301,5 +301,11 @@ span {
 @media(max-width: 500px) {
     .heading {
         font-size: 1rem;
+    }
+
+    .home-img img {
+        box-shadow: 0 0 25px var(--main-color),
+            0 0 50px var(--main-color),
+            0 0 100px var(--main-color);
     }
 }
