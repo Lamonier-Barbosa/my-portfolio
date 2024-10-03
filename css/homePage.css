@@ -187,7 +187,7 @@ span {
 
     0%,
     20% {
-        content: "Desenvolvedor Front-End";
+        content: "Dev Front-End";
     }
 
     21%,
@@ -197,12 +197,12 @@ span {
 
     41%,
     60% {
-        content: "UI / UX Design";
+        content: "UI/UX Design";
     }
 
     61%,
     80% {
-        content: "Desenvolvedor Back-End";
+        content: "Dev Back-End";
     }
 
     81%,
@@ -307,5 +307,27 @@ span {
         box-shadow: 0 0 25px var(--main-color),
             0 0 50px var(--main-color),
             0 0 100px var(--main-color);
+        margin-top: 30px;
     }
+
+    .home-content h3 {
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        font-size: 2.5rem;
+    }
+
+
+    .home-content h1 {
+        font-size: 5.5rem;
+        font-weight: 700;
+        margin-top: -50px;
+        line-height: 1;
+    }
+
+    .text-animation {
+        font-size: 10px;
+        font-weight: 600;
+        min-width: 280px;
+    }
+
 }
