@@ -139,6 +139,14 @@
         margin: 0 auto;
     }
 
+    .btn-portfolio-content {
+        height: 330px;
+    }
+
+    .btn-portfolio {
+        width: 130px;
+    }
+
     .project-description {
         width: 280px;
     }
